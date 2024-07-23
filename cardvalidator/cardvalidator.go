@@ -71,6 +71,7 @@ func main() {
 
 	// Endpoint to validate credit card number
 	r.POST("/validate", func(c *gin.Context) {
+
 		var request struct {
 			CardNumber string `json:"card_number"`
 		}
